@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    user-select: none;
+}
+
+header {
+    background-color: rgba(76, 102, 128, 0.815);
+    height: 3rem;
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+}
+
+header div {
+    font-size: 1.5rem;
+}
+
+.profile {
+    border-radius: 2rem;
+    background-image: url('https://i.pinimg.com/originals/04/bb/21/04bb2164bbfa3684118a442c17d086bf.jpg');
+    height: 2.3rem;
+    width: 2.3rem;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    padding: 1rem;
+    background-color: rgba(76, 102, 128, 0.445);
+    height: calc(100vh - 5rem);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.inner-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-container div {
+    margin: 1rem 0;
+}
+
+.btn {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+}
+
+.finish {
+    height: 3rem;
+    width: 7rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: red;
+    font-weight: bold;
+    position: absolute;
+    bottom: 1rem;
+}
+
+#maintenanceWrapper, #outageWrapper {
+    display: none;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-container {
+    width: 30%;
+    height: 5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+#emailPanel, #maintenanceEmailPanel {
+    flex-direction: column;
+    margin: 0;
+    display: none;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+#outageBtn, #maintenanceBtn {
+    height: 4rem;
+    width: 10rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+#maintenanceBtn {
+    background-color: gold;
+}
+
+#outageBtn {
+    background-color: red;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#outageEmails span, #maintenanceEmails span {
+    margin: 0 0.5rem;
+}

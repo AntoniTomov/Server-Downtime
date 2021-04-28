@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="admin-panel.css">
+    <script src="admin-panel.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>Home</div>
+        <div class="profile"></div>
+    </header>
+    <main>
+        <!-- <select name="downtime-type" id="downtimeType">
+            <option value="maintenance">maintenance</option>
+            <option value="outage">outage</option>
+        </select> -->
+        <section class="btn-container">
+            <button id="outageBtn">Outage</button>
+            <button id="maintenanceBtn">Maintenance</button>
+        </section>
+        <section class="main-section">
+            <div id="outageWrapper">
+                <h2>Outage</h2>
+                <div class="inner-container">
+                    <div>
+                        <label for="msg">Message: </label>
+                        <select name="downtime-message" id="msg">
+                            <option value="update">Server update</option>
+                            <option value="capacity check">Server capacity check</option>
+                            <option value="defenses check">Server defenses check</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="btn" id="addOutageEmailBtn">Add email</button>
+                    </div>
+                    <div id="outageEmails"></div>
+                    <div id="emailPanel">
+                        <div>
+                            <label for="date">Date: </label>
+                            <input type="date" id="date">
+                        </div>
+                        <div>
+                            <label for="emailType">Email type: </label>
+                            <select name="emailType" id="emailType">
+                                <option value="initial">Initial</option>
+                                <option value="middle">Middle</option>
+                                <option value="last">Last</option>
+                            </select>
+                        </div>
+                        <div class="centered">
+                            <button class="btn" id="createOutageEmailBtn">Create</button>
+                        </div>
+                    </div>
+                    <button class="finish">Finish</button>
+                </div>
+            </div>
+            <div id="maintenanceWrapper">
+                <h2>Maintenance</h2>
+                <div class="inner-container">
+                    <div>
+                        <label for="msg">Message: </label>
+                        <textarea name="freeMsg" id="freeMsg" cols="30" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn" id="addMaintenanceEmailBtn">Add email</button>
+                    </div>
+                    <div id="maintenanceEmails"></div>
+                    <div id="maintenanceEmailPanel">
+                        <div>
+                            <label for="date">Date: </label>
+                            <input type="date" id="date">
+                        </div>
+                        <div>
+                            <label for="emailType">Email type: </label>
+                            <select name="emailType" id="emailType">
+                                <option value="initial">Initial</option>
+                                <option value="middle">Middle</option>
+                                <option value="last">Last</option>
+                            </select>
+                        </div>
+                        <div class="centered">
+                            <button class="btn" id="createMaintenanceEmailBtn">Create</button>
+                        </div>
+                    </div>
+                    <button class="finish">Finish</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
