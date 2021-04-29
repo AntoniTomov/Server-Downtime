@@ -16,16 +16,16 @@ const allOutageEmails = outageEmails.querySelectorAll('span');
 
 window.addEventListener('click', (ev) => {
     switch(ev.target) {
-        case outageBtn: {
+        case maintenanceBtn: {
             showElements(outageWrapper);
             hideElements(maintenanceWrapper);
-            main[0].style.backgroundImage = 'url(https://i2-prod.dailystar.co.uk/incoming/article20747051.ece/ALTERNATES/s615/0_Fortnite-Down.jpg)';
+            main[0].style.backgroundImage = 'url(https://t3.ftcdn.net/jpg/04/25/12/60/360_F_425126020_j8IEXIT4eKUzymu8RLCgnk4ZrTR6YFQ8.jpg)';
         }
         break;
-        case maintenanceBtn: {
+        case outageBtn: {
             showElements(maintenanceWrapper);
             hideElements(outageWrapper);
-            main[0].style.backgroundImage = 'url(https://t3.ftcdn.net/jpg/04/25/12/60/360_F_425126020_j8IEXIT4eKUzymu8RLCgnk4ZrTR6YFQ8.jpg)';
+            main[0].style.backgroundImage = 'url(https://i2-prod.dailystar.co.uk/incoming/article20747051.ece/ALTERNATES/s615/0_Fortnite-Down.jpg)';
         }
         break;
         case addOutageEmailBtn: {
